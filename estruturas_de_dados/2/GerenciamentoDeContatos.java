@@ -68,21 +68,20 @@ public class GerenciamentoDeContatos {
         gestao.adicionarContato("Maria", "8765-4321", "maria@email.com");
         gestao.adicionarContato("Ana", "1122-3344", "ana@email.com");
         gestao.adicionarContato("Carlos", "1234-5678", "carlos@email.com");
-        System.out.println();
 
         System.out.println("\nExibindo todos os contatos:");
         gestao.exibirContatos();
 
-        System.out.println("\n\nBuscando contato 'Maria':");
+        System.out.println("\nBuscando contato 'Maria':");
         gestao.buscarContato("Maria");
 
-        System.out.println("\n\nRemovendo contato 'Carlos':");
+        System.out.println("\nRemovendo contato 'Carlos':");
         gestao.removerContato("Carlos");
 
-        System.out.println("\n\nTentando remover contato 'João' que não existe:");
+        System.out.println("\nTentando remover contato 'João' que não existe:");
         gestao.removerContato("João");
 
-        System.out.println("\n\nExibindo todos os contatos após remoções:");
+        System.out.println("\nExibindo todos os contatos após remoções:");
         gestao.exibirContatos();
     }
 }
