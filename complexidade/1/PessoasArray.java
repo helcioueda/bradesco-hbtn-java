@@ -24,7 +24,7 @@ public class PessoasArray {
 
         for (int i = 0; i < nomes.length; i++) {
             System.out.println("Passando pelo indice:" + i);
-            if (nomes[i].equalsIgnoreCase(nome)) {
+            if (nomes[i].equals(nome)) {
                 encontrado = true;
                 posicao = i;
                 System.out.println("Nome pesquisado é " + nomes[i] + " que está na posição " + i);
