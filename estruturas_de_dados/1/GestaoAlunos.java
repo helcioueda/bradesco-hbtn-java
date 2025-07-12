@@ -37,7 +37,7 @@ public class GestaoAlunos {
         boolean encontrado = false;
         for (Aluno aluno : alunos) {
             if (aluno.getNome().equalsIgnoreCase(nome)) {
-                System.out.println("Aluno encontrado: " + aluno.getNome());
+                System.out.println("Aluno encontrado: " + aluno.toString());
                 encontrado = true;
                 break;
             }
@@ -54,7 +54,7 @@ public class GestaoAlunos {
         }
         System.out.println("\n--- Lista de Alunos ---");
         for (Aluno aluno : alunos) {
-            System.out.println(aluno.getNome());
+            System.out.println(aluno.toString());
         }
         System.out.println("-----------------------");
     }

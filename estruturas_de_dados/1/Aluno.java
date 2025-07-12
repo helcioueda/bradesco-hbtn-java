@@ -1,6 +1,11 @@
 
 
 public class Aluno {
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + "]";
+	}
+
 	private String nome;
 	private int idade;
 	
