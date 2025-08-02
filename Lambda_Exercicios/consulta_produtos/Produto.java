@@ -13,7 +13,6 @@ public class Produto {
         this.tipo = tipo;
     }
 
-    // Getters para os atributos
     public String getNome() {
         return nome;
     }
@@ -36,7 +35,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("%s %.2f %.2f %d %s",
+        return String.format("%s %f %f %d %s",
                              nome, preco, peso, quantidadeEmEstoque, tipo.name());
     }
 }
