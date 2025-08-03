@@ -32,6 +32,9 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s R$ %.2f", codigo, nome, categoria, preco);
+    	 Locale.setDefault(new Locale("pt", "BR"));
+    	
+    	
+        return String.format(Locale.getDefault(), "[%d] %s %s R$ %.2f", codigo, nome, categoria, preco);
     }
 }
