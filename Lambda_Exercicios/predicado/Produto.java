@@ -1,7 +1,7 @@
 public class Produto {
     private String nome;
     private double preco;
-    private double peso; // em gramas
+    private double peso;
     private int quantidadeEmEstoque;
     private TiposProduto tipo;
 
