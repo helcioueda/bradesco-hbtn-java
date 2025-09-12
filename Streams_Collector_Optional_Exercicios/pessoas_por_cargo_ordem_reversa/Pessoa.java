@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Objects;
 
 public class Pessoa implements Comparable<Pessoa> {
     private int codigo;
@@ -28,7 +29,20 @@ public class Pessoa implements Comparable<Pessoa> {
     }
 
     @Override
-    public int compareTo(Pessoa outraPessoa) {
-        return Integer.compare(this.codigo, outraPessoa.codigo);
+    public int compareTo(Pessoa outra) {
+        return this.nome.compareTo(outra.nome);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Pessoa)) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return codigo == pessoa.codigo;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codigo);
     }
 }
